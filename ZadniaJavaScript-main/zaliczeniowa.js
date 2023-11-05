@@ -1,1 +1,0 @@
-document.write("Szkielet zaliczeniowy JavaScript Karol Gryczan klasa 3F".bold().fontcolor("purple").fontsize(5));
