@@ -1,1 +1,0 @@
-document.write("wykonał: Karol Gryczan mój numer w dzienniku 10, czyli mam układ [(10) mod 4=2]  ".bold().fontcolor("purple").fontsize(5));
