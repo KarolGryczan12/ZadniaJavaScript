@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<div style="color:green;font-size: 48px;">
+<script lang="JavaScript">
+
+var liczba1 = prompt("Podaj pierwszy dzień ","");
+var D1_gry = parseFloat(liczba1);
+var liczba2 = prompt("Podaj pierwszą godzinę ","");
+var G1_gry = parseFloat(liczba2);
+var liczba3 = prompt("Podaj drugi dzień ","");
+var D2_gry = parseFloat(liczba3);
+var liczba4 = prompt("Podaj drugą godzinę ","");
+var G2_gry = parseFloat(liczba4);
+    
+
+var sekundy,razem,dni;
+
+    
+    dni=(D1_gry - D2_gry)*24*3600;
+    sekundy=(G1_gry - G2_gry)*3600;
+    razem=dni+sekundy;
+    
+    document.write("D1="+D1_gry+" G1="+G1_gry+" D2="+D2_gry+" G2="+G2_gry+"<br>");
+    document.write("Ilość sekund="+razem+"<br>")
+		
+    </script>
+    </div>
+</body>
+</html>
