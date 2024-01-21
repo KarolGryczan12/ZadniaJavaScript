@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Gryczan3F kod  </title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Kod </h1>
+    <textarea rows="30" cols="60">
+        <html>
+            <head>
+            <script type="text/javascript">
+            function Router(NazwaObiektu, PoE) {
+                this.NazwaObiektu = NazwaObiektu;
+                this.PoE = PoE;
+            }
+            
+            Router.prototype.wypisz = function () {
+                alert(this.NazwaObiektu + ' ' + this.PoE + ' ');
+            };
+            
+            var Router1 = new Router("Synology", "Tak posiada PoE");
+            var Router2 = new Router('Mesh', 'Rak posiada PoE');
+            Router1.wypisz();
+            Router2.wypisz();
+            
+            document.write("dostęp do właściwości" + "<br>");
+            document.write("Router pierwszy" + " " + Router1.NazwaObiektu + " " + Router1.PoE);
+            </script>
+            </head>
+            <body>
+            <br>
+            programowanie obiektowe
+            48
+            </body>
+            </html>
+    </textarea>
+</body>
+</html>

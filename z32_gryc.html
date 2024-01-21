@@ -1,23 +1,22 @@
 <html>
 <head>
 <script type="text/javascript">
-function Router(NazwaObiektu,PoE)//początek konstruktora
-{
-    this.NazwaObiektu;
-    this.PoE;
+function Router(NazwaObiektu, PoE) {
+    this.NazwaObiektu = NazwaObiektu;
+    this.PoE = PoE;
+}
 
-}//koniec konstruktora
-Router.prototype.wypisz = function () //definicja metody
-{
-alert(this.NazwaObiektu + ' ' + this.PoE + ' ');
+Router.prototype.wypisz = function () {
+    alert(this.NazwaObiektu + ' ' + this.PoE + ' ');
 };
-var Router1 = new Router("Synology", "Tak posiada PoE"); // nowy obiekt osoba1
+
+var Router1 = new Router("Synology", "Tak posiada PoE");
 var Router2 = new Router('Mesh', 'Rak posiada PoE');
-Router1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1
+Router1.wypisz();
 Router2.wypisz();
-document.write("dostęp do właściwości"+"<br>");
-// poniżej dostęp do pól osoby1
-document.write("Router pierwszy"+" "+Router1.NazwaObiektu+" "+Router2.PoE);
+
+document.write("dostęp do właściwości" + "<br>");
+document.write("Router pierwszy" + " " + Router1.NazwaObiektu + " " + Router1.PoE);
 </script>
 </head>
 <body>
