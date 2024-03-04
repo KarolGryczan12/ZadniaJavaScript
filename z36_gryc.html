@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obliczanie koloru</title>
+</head>
+<body>
+    <B> <h1 style="color:green;">  MENU  </h1> </B>
+    <B> <h2 style="color:pink;"> 1 - Różowy  </h2> </B>
+    <B> <h2 style="color:blue;"> 2 - Niebieski </h2> </B>
+    <input type="button" name="nazwisko_ucznia" value="Oblicz" onclick="fun_kow()" />
+    <script>
+        function fun_kow() {
+            var x_kow = prompt("Podaj kolor", "");
+            if(x_kow == 1 || x_kow.toLowerCase() == "różowy") {
+                document.write('<h1 style="color:pink;">wczytałeś kolor Różowy</h1><br />');
+            } else if(x_kow == 2 || x_kow.toLowerCase() == "niebieski") {
+                document.write('<h6 style="color:blue;">wczytałeś kolor Niebieski</h6><br />');
+            }
+        }
+    </script>
+</body>
+</html>
