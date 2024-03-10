@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 38 - w - Gryczan</title>
+    <style>
+        body {
+            background-color: silver;
+        }
+        .green-text {
+            color: green;
+        }
+        .red-text {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    
+        var liczba1 = 5;
+        var liczba2 = 5 + 7;
+        var liczba3 = 7;
+        var liczba4 = 7 + 4;
+
+        var dziennik = 11; 
+        var fontSize = 40 + (dziennik % 7);
+
+        document.write('<div style="font-size: ' + fontSize + 'px;" class="green-text">' + 'Karol' + ' ' + 'Gryczan' + '</div>');
+        document.write('<div class="green-text">Liczba1: ' + liczba1 + '</div>');
+        document.write('<div class="green-text">Liczba2: ' + liczba2 + '</div>');
+        document.write('<div class="green-text">Liczba3: ' + liczba3 + '</div>');
+        document.write('<div class="green-text">Liczba4: ' + liczba4 + '</div>');
+
+       
+        document.write('<div class="red-text">---------------- MENU -----------------</div>');
+        document.write('<div class="red-text"> 5 - wyświetlanie teori </div>');
+        document.write('<div class="red-text"> 27 - wyliczanie przedziału dwóch liczb </div>');
+        document.write('<div class="red-text"> 68 - wyliczanie przedziału dwóch liczb </div>');
+        
+
+        function askForOption() {
+            var opcja = prompt("Podaj opcję:");
+            if (opcja == 5) {
+                document.write("<font color=blue size=7>Jesteś w opcja 3 --> teoria</font>"+"<br>");
+                document.write("<font color=green size=7>  && i x=3 y=4 (x <9 && y > 2) wynik --> prawda</font>"+"<br>"); 
+                document.write("<font color=green size=7> || lub x=3 y=4 (x==8 || y==6) wynik --> fałsz </font>"+"<br>");
+                document.write("<font color=green size=7> ! Zaprzeczenie x=3 y=4 !(x==y) wynik --> prawda</font>"+"<br>");  
+            }
+            else if (opcja == 27 ) {
+                document.write("<font color=green size=7>Jesteś w opcja 27 --> przedział</font>"+"<br>");
+            }
+            else if (opcja == 68 ) {
+                document.write("<font color=green size=7>Jesteś w opcja 68 --> przedziały inne </font>"+"<br>");
+            }
+            else  {
+                document.write("<font color=green size=7> Nie ma takiej opcji </font>"+"<br>");
+            }
+           
+        }
+    </script>
+
+  
+    <input type="button" value="Wybierz Opcje" onclick="askForOption()" />
+</body>
+</html>
+
+    </script>
+</body>
+</html>
+
