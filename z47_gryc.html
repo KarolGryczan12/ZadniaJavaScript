@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+  <title>Sprawdzenie danych Gryczan</title> 
+  <meta charset="utf-8"> 
+</head> 
+<body>
+  <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+      do {
+        var a = parseFloat(prompt("a =", ""));
+        var b = parseFloat(prompt("b =", ""));
+        var c = parseFloat(prompt("c =", ""));
+        
+        if (!((a > 0) && (b > 0) && (c > 0))) {
+          document.write("Każdy bok musi być większy od zera.<br>");
+        } else if (!((a + b > c) && (a + c > b) && (b + c > a))) {
+          document.write("Boki nie spełniają nierówności trójkąta.<br>");
+        } else {
+          document.write("trójkąt się zamyka");
+          break;
+        }
+      } while (true);
+    </script>
+  </div>
+</body>
+</html>

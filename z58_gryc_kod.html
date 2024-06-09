@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Gryczan3F kod  </title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Kod </h1>
+    <textarea rows="30" cols="60">
+        <html>
+    <body>
+        <div style="color:red;font-size:18px;">
+            <script language="JavaScript"> //Zad58
+            var x=prompt("Podaj liczbę 1=","");
+            var Liczba1_gry=parseInt(x);
+            var x=prompt("Podaj liczbę 2=","");
+            var Liczba2_gry=parseInt(x);
+            
+            if(Liczba1_gry<Liczba2_gry){
+                for(var i=Liczba1_gry;i<=Liczba2_gry;i++){ // Poprawiono literówkę w deklaracji zmiennej i
+                    if(i%2==1){
+                        document.write("<p style=\"font-size:18px; color:black;\"><br>"+i+"<br></p>"); // Usunięto literówkę i dodano zamknięcie tagu </p>
+                    }
+                }
+            }
+            if(Liczba1_gry>Liczba2_gry){
+                for(var i=Liczba1_gry;i>=Liczba2_gry;i--){ // Poprawiono pętlę zmniejszającą liczbę
+                    if(i%2==1){
+                        document.write("<p style=\"font-size:18px; color:black;\"><br>"+i+"<br></p>"); // Usunięto komentarz i dodano zamknięcie tagu </p>
+                    }
+                }
+            }
+            if(Liczba1_gry==Liczba2_gry){
+                document.write("Brak obliczeń"); // Dodano komunikat dla równych liczb
+            }
+            </script>
+        
+        </div>
+    </body>
+</html>

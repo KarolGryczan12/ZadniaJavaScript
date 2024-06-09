@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Gryczan3F kod  </title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Kod </h1>
+    <textarea rows="30" cols="60">
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Rysowanie prostokąta z gwiazdek</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: monospace;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        
+        var nazwisko = "Gryczan";  
+        var imie = "Karol";  // 
+        var a_gry = (nazwisko.length % 4) + 5;
+        var b_gry = (imie.length % 6) + 20;
+        var trujkat = "";
+        for (var i = 0; i < b_gry; i++) {
+            trujkat += "*";
+        }
+        trujkat += "\n";
+        for (var i = 0; i < a_gry - 2; i++) {
+            trujkat += "*";
+            for (var j = 0; j < b_gry - 2; j++) {
+                trujkat += " ";
+            }
+            trujkat += "*\n";
+        }
+        for (var i = 0; i < b_gry; i++) {
+            trujkat += "*";
+        }
+        trujkat += "\n";
+        document.write("<pre>" + trujkat + "</pre>");
+    </script>
+</body>
+</html>
+</textarea>
+</body>
+</html>

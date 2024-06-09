@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Gryczan3F kod  </title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Kod </h1>
+    <textarea rows="30" cols="60">
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Powtarzanie napisu</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div style="color:red; font-size:50px;">
+        <script language="JavaScript">
+     
+            var ilosc_powtorzen = prompt("Ile razy powtórzyć napis?", "");
+       
+            var inicjaly = prompt("Podaj tekst (np. Twoje inicjały):", "");
+
+     
+            for (var i = 1; i <= ilosc_powtorzen; i++) {
+       
+                for (var j = 1; j < i; j++) {
+                    document.write("&nbsp;&nbsp;&nbsp;&nbsp;");
+                }
+                
+                document.write(i + "_" + inicjaly + "_" + i + "<br>");
+            }
+        </script>
+    </div>
+</body>
+</html>
+</textarea>
+</body>
+</html>
